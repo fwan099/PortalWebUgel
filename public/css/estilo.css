@@ -1,0 +1,1547 @@
+
+
+/*Elimina el scroll en el eje X*/
+body{
+	overflow-x: hidden;
+}
+.carousel-indicators .active{
+    background-color: #0088CC !important;
+}
+/* Duseño de la cabecera 1 */
+.dataTables_length{
+	display: none !important;
+    opacity:0;
+}
+.dataTables_filter{
+	margin-top: 10px !important;
+	margin-right: 18px !important;
+}
+.header-box{
+	width: 100%;
+	height: 120px;	
+	display: flex;
+	align-items: center;
+	
+
+	
+}
+/*Medidas de la cabecera 2*/
+.header-box-2{
+	width: 100%;
+	height: 60px;
+	position: sticky;
+	top: 0;
+	z-index: 80;
+    
+}
+
+
+/*Diseño de la primera parte de la cabecera*/
+.header-box-item1{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+
+	
+
+	
+
+}
+.header-box-item1 .trans{
+	height: 80px;
+}
+.header-box-item1 img{
+	
+	z-index: -3;
+	object-fit: contain;
+
+}
+
+/*Diseño de la segunda parte de la cabecera*/
+.header-box-item2{
+	width: 100%;
+	height: 100%;
+	background-color: #0088CC;
+	/*background-color: #ED564B;*/
+	   
+
+
+
+	
+	
+}
+.bar-nav{
+	width: 100%;
+	height: 100%;
+	padding: 0 50px;
+	display: flex;
+}
+.nav-buttons{
+	width: 60%;
+	height: 100%;
+	
+	display: flex;
+}
+
+/*Diseñando los botones de la bara de navegacion*/
+.nav-buttons ul{
+	display: flex;
+
+
+}
+.nav-buttons li{
+	list-style: none;
+	height: 100%;
+	align-self: center;
+	transition: all .3s;
+	display: flex;
+	align-items: center;
+
+}
+.nav-buttons a{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 20px;
+	height: 40px;
+	display: flex;
+	padding: 10px 13px;	
+	
+	
+}
+.nav-buttons a:hover{
+	color: #fff;
+}
+.nav-buttons i{
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 3px;
+	transition: all .3s;
+}
+.nav-buttons li:hover{
+	background-color:#E03A3C;
+
+}
+
+
+/*Diseñando lel boton con la opcion Areas y demas*/
+@Keyframes desplazar{
+	0%{  top: 68%; }
+	100%{ top: 100%; }
+}
+
+.areas-li ul, .inst-li ul, .serv-li ul, .gest-li ul{
+	position: absolute;
+	display: block;
+	background-color: #fff;
+	/*background-color: #D54D43;*/
+	width: 256px;
+	display: none;
+	animation-name: desplazar ;
+   animation-duration: .4s;
+   top: 100%;
+   border-radius: 0 4px 4px;
+   border-top: 5px solid #E03A3C;
+   box-shadow: 0 20px 45px rgb(0 0 0 / 8%);
+   
+
+
+
+}
+.areas-li li, .inst-li li, .serv-li li, .gest-li li{
+	border-left: solid 5px transparent;
+	transition: all .2s;
+	
+}
+.areas-li li a, .inst-li li a, .serv-li li a, .gest-li li a{
+	color: #777;
+	font-weight: normal;
+	font-size: 11px;
+}
+.areas-li li a:hover, .inst-li li a:hover, .serv-li li a:hover, .gest-li li a:hover{
+	color: #777;
+
+
+}
+.areas-li li:hover, .inst-li li:hover, .serv-li li:hover, .gest-li li:hover {
+	
+	background-color: #efefef;
+
+}
+.areas-li:hover > .menu-areas, .inst-li:hover > .menu-inst, .serv-li:hover > .menu-services, .gest-li:hover > .menu-gestion {
+	display: block;
+
+}
+
+
+/*Diseño para los botones de las redes sociales*/
+.nav-redes{
+	
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-redes ul{
+	display: flex;
+
+
+}
+.nav-redes li{
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	align-self: center;
+	background-color: #fff;
+	margin: 2px 2px;
+	border-radius: 100%;
+	box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
+	transition-property: background-color;
+	transition-duration: .5s;
+
+    
+
+}
+.nav-redes li:hover{
+	background-color: #007AB7;
+}
+.nav-redes li:nth-child(2):hover{
+	background-color: #00BD09;
+}
+.nav-redes li:nth-child(3):hover{
+	background-color: #F60000;
+}
+.nav-redes li:nth-child(4):hover{
+	background-color: #F98F07;
+}
+.nav-redes a{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	text-decoration: none;
+	color: #000;
+	justify-content: center;
+	align-items: center;
+}
+.nav-redes i{
+	display: flex;
+	font-size: 18px;
+}
+.nav-redes a:hover{
+	color: #fff;
+}
+
+/*Diseño de la parte del Slider*/
+.box-slider{
+	width: 100%;
+	height: 520px;	
+	padding: 20px;
+
+}
+.box-slider-flex{
+	
+	width: 100%;
+	height: 100%;
+	
+}
+/*................................Diseño responsivo del menu .....................................................*/
+
+
+
+.menu{
+
+	color: #fff;
+	height: 70px;
+	display: none;
+	
+}
+.menu__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	widows: 90%;
+	margin: 0 auto;
+	
+	height: 100%;
+
+
+}
+.menu__links{
+	
+
+	height: 100%;
+	transition: transform .5s;
+	display: flex;
+	width: 100%;
+
+}
+
+.menu__item{
+	list-style: none;
+	position: relative;
+	height: 100%;
+	/*--clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);*/
+	--clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.menu__item:hover{
+	--clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.menu__nesting{
+	clip-path: var(--clip);
+	list-style: none;
+	transition: clip-path .3s;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: max-content;
+	transform: translateY(100%);
+	background-color: #6DA194;
+
+}
+.menu__link{
+	color: #fff;
+	text-decoration: none;
+	padding: 0 3px;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	font-family: "Roboto";
+	font-size: .8em;
+}
+.menu__link:hover{
+	background-color: #7c92bd;
+}
+.menu__arrow{
+	display: block;
+	margin-left: 3px;
+
+}
+.menu__link--inside{
+	padding: 30px 100px 30px 20px;
+
+}
+.menu__link--inside:hover{
+	background-color: #798499;
+}
+.menu__h{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	cursor: pointer;
+	display: none;
+}
+.menu__img{
+	display: block;
+	width: 36px;
+}
+.pp{
+	width: 100%;
+	height: 70px;
+	background-color: #555;
+}
+.ff{
+	width: 100%;
+	height: 900px;
+	background-color: slateblue;
+}
+@media(max-width:1120px){
+   .box-slider{
+	width: 100%;
+	height: 360px;	
+	padding: 20px;
+
+}
+
+}
+
+@media screen and (max-width: 900px){
+	.menu{
+		display: block;
+	}
+	.menu__h{
+		display: flex;
+	}
+	.menu__item{
+		--clip: 0;
+		overflow: hidden;
+	}
+	.menu__item--active{
+		--transform: rotate(0);
+		--background: #5e7094;
+	}
+	.menu__item--show{
+		background-color: var(--background);
+	}
+	.menu__links{
+		position: absolute;
+		
+		width: 100%;
+		top: 170px;
+		bottom: 0;
+		right: 0;
+		background-color: #6DA194;
+		
+		display: grid;
+		grid-auto-rows: max-content;
+		transform: translateY(-180%);
+		overflow-y: auto;
+		z-index: 123012;
+
+
+	}
+	.menu__links--show{
+		transform: unset;
+		width: 100%;
+		height: 100%;
+		z-index: 6;
+	}
+	.menu__link{
+		padding: 18px 0;
+		padding-left: 16px;
+		
+		height: auto;
+	}
+	.menu__link i{
+		margin-left: 6px;
+	}
+	.menu__h{
+		margin-left: auto;
+		margin-right: 20px;
+
+	}
+	.menu__nesting{
+		display: grid;
+		position: unset;
+		width: 100%;
+		transform: translateY(0);
+		height: 0;
+		transition: height .3s;
+
+	}
+	.menu__link--inside{
+		width: 90%;
+		margin-left: auto;
+		border-left: 1px solid #798499;
+		z-index: 6;
+	}
+}
+/*.....................................................................................*/
+
+/*Diseño de la parte de la caja de los botones del servicios*/
+.box-services{
+	width: 100%;
+	
+	
+	padding: 20px 120px;
+	z-index: -3;
+}
+.services{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.services .item{
+	width: 160px;
+	height: 200px;
+	
+	margin: 10px;
+
+}
+.item a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	text-align: center;
+}
+.item-services{
+	width: 100%;
+	height: 100%;
+	transition: all .3s;
+	
+}
+
+.item-services .logo-services{
+	width: 100%;
+	height: 80%;
+	
+	
+}
+.item-services .logo-services img{
+	width: 100%;
+	height: 100%;
+	
+	background-color: #fff;
+	border-radius: 100%;
+	
+}
+.item-services .logo-letter{
+	width: 100%;
+	height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.logo-letter span{
+	color: #777777;
+	font-size: .84em;
+	font-family:  'Roboto', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 0;
+	
+}
+/*Diseño de los botones de cada servicio*/
+
+.item-services:hover{
+	filter:brightness(0.7);
+
+}
+
+/*Bloquemos el contenedor responsivo*/
+
+.nav-responsive{
+	display: none;
+}
+
+/*Diseño del contenedor Main*/
+.main-box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding: 10px;
+}
+/* Diseño para el container de comunicados */
+.main-comunicados{
+	width: 50%;
+	height: 100%;
+	
+	
+	padding: 6px;
+}
+.main-comunicados-box{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	border-radius: 4px;
+	
+	
+}
+.comunicados-title{
+	padding: 6px;
+	display: flex;
+	justify-content: center;
+}
+.comunicados-title span{
+	font-family: Roboto;
+	font-weight: 700;
+	color: #004488;
+	font-size: 1em;
+	letter-spacing: 4px;
+}
+.comunicados-content {
+	padding: 0 8px;
+	min-height: 560px;
+
+}
+.convocatoria .table{
+	margin-top: 20px;
+	padding: 0 20px;
+
+	
+
+}
+.fa-file-pdf{
+	font-size: 28px;
+	text-align: center;
+	color: #DC3545;
+}
+.comunicados-content td:nth-child(3){
+	min-width: 100px ;
+}.comunicados-content .tr{
+	height: 80px !important;
+}
+.comunicados-content th{
+	text-align: center !important;
+}
+.btn-info-C{
+	width: 100%;
+	padding-bottom: 16px;
+	display: flex;
+	justify-content: center;
+
+}
+
+/* Diseño para el container de noticias */
+.main-noticias{
+	width: 50%;
+	height: 100%;
+	
+	padding: 6px;
+}
+.main-noticias-box{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	border-radius: 4px;
+
+}
+.noticias-title{
+	padding: 6px;
+	display: flex;
+	justify-content: center;
+}
+.noticias-title span{
+	font-family: Roboto;
+	font-weight: 700;
+	color: #004488;
+	font-size: 1em;
+	letter-spacing: 4px;
+}
+
+/*Diseño de la seccion del Footer1 o pie de pagina*/
+.box-info-footer{
+	width: 100%;
+	
+	background-color: #3B3B3B;
+	
+	/*border-top: solid 4px #ED564B;*/
+	border-top: solid 4px #0088CC;
+	padding: 10px 10px;
+	
+}
+.flex-box-info{
+	display: flex;
+	width: 100%;
+}
+.box-info-item1{
+
+	width: 70%;
+	
+	margin: 0 10px;	
+	display: flex;
+	align-items: center;
+}
+
+
+.box-info-item1 ul{
+
+}
+.box-info-item1 li{
+   list-style: none;
+   color: #aaa;
+   font-family: Roboto;
+   padding: 6px 12px;
+   font-size: 14px;
+}
+.box-info-item1 i{
+	padding: 0 6px;
+}
+.box-info-item2{
+	justify-content: flex-end;
+	width: 30%;
+	margin: 0 10px;	
+	display: flex;
+	align-items: center;
+}
+.logo-footer{
+	width: 100px;
+	height: 100px;
+
+}
+
+/*Diseño de la seccion del Footer2 o pie de pagina*/
+.box-footer{
+	width: 100%;
+	height: 60px;
+	background-color: #292929;
+}
+.footer-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.footer-flex span{
+	color: #aaa;
+	font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .7em;
+	font-weight: 700;
+}
+.footer-flex span a{
+	text-decoration: none;
+	color: #aaa;
+
+}
+.footer-flex span a:hover{
+	text-decoration: underline;
+}
+/* Diseño para el archivo gestion-inst.php */
+.main-gestion-inst{
+	width: 100%;
+   height: 100%;
+	padding: 20px 0;
+}
+@media screen and (min-width: 1000px){
+   .main-gestion-inst{
+   	height: 100%;
+   }
+
+
+}
+.items-box .title-box{
+	width: 100%;
+	height: 60px;
+	
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.items-box .title-box span{
+	font-family:  Roboto;
+	font-weight: bolder;
+	font-size: .8em;
+	color: #004488;
+	letter-spacing: 3px;
+
+}
+.jefe-area-item{
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+.item-button-jefe{
+	width: 300px;
+	height: 100%;
+	border-radius: 6px;
+	background-color: #0074C1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s;
+
+}
+.jefe-area-item a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: .9em;
+	letter-spacing: .5px;
+
+}
+.item-button-jefe:hover{
+	 background-color: #005D9A;
+	 color: #fff;
+}
+/*Diseño de los botones*/
+.item-boxes{
+	width: 180px;
+	height: 180px;
+	padding: 10px;
+	
+}
+.item-boxes .item-box-main{
+	width: 100%;
+	height: 100%;
+	background-color: #27E181;
+	border-radius: 100%;
+	box-shadow: 0 0 4px 0 #888;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color .3s;
+	transition: width .3s, height .3s, transform .3s;
+}
+.item-boxes .item-box-main span{
+	color: #fff;
+	font-size: .76em;
+	font-family:  'Roboto', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+.item-boxes  a{
+	text-decoration: none;
+}
+.item-boxes .item-box-main:hover{
+	background-color: #ED564B;
+	transform : scale(1.1);
+
+}
+/*Edicion de texto de auditoria interna*/
+.especial span{
+	text-align: center;
+}
+/*Diseño del sub menu dentro del container de Areas*/
+hr {
+  height: 2px;
+  background-color: #ED564B;
+  border: none;
+
+}
+.sub-menu-container{
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+}
+.sub-menu-container .sub-menu-botones{
+	width: 100%;
+	height: 100%;
+	background-color: #ECF0EA;
+	border-radius: 6px;
+
+}
+.sub-menu-areas{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+
+}
+.sub-menu-areas li{
+	list-style: none;
+    align-self: center;
+ 
+}
+.sub-menu-areas a{
+	text-decoration: none;
+    color: #666;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .76em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    height: 40px;
+    display: flex;
+    padding: 10px 13px;
+
+}
+.sub-menu-areas a:hover{
+	text-decoration: underline;
+}
+/*Diseño de la parte de el container*/
+/*Modificacion de los incocnos */
+.logo-services i{
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+/*Diseño de main nosotros*/
+.boxing-main{
+	width: 100%;
+	height: 100%;
+
+	padding: 12px;
+}
+.caja-main-box{
+	width: 100%;
+
+	
+	display: flex;
+	padding: 0 30px;
+}
+.buttons-box{
+	width: 26%;
+   
+	padding: 0 6px;
+
+}
+.container-box{
+	width: 84%;
+	min-height: 610px;
+	height: 100%;
+	background-color: #F5F5F5;
+	padding: 0 6px;
+	
+
+}
+/*Diseño de los botones dentro container */
+.buttons-box ul{
+	background-color: #F5F5F5;
+
+}
+.buttons-box ul li{
+	list-style: none;
+	transition: all .3s;
+}
+.buttons-box li  a{
+	
+	text-decoration: none;
+	color: #0088CC;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 20px;
+	height: 40px;
+	display: flex;
+	padding: 10px 13px;
+	transition: color .3s;
+}
+.buttons-box li:hover{
+	background-color:#0088CC; 
+}
+.buttons-box li a:hover{
+	color: #fff;
+}
+/*Diseño del container dentro del boxing-main*/
+.container-box .title{
+   text-align: center;
+}
+.container-box .title h1{
+	color: #646464;
+	font-size: 20px;
+    font-family: Roboto;
+}
+.container-box .title h2{
+	color: #646464;
+	font-size: 15px;
+    font-family: Roboto;
+    padding: 12px 0;
+}
+
+
+
+.contenido .title h2{
+	color: #646464;
+	font-size: 16px;
+    font-family: Roboto;
+}
+
+.container-box .contenido p{
+	font-family: Roboto;
+	font-size: 16px;
+	text-align: justify;
+	line-height : 25px;
+	color: #646464;
+	padding-bottom: 30px;
+	user-select: none;
+
+}
+.title-container{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	
+
+	
+
+
+}
+/*Diseño  para el contenido del pdf*/
+.pdfview2{
+	display: none;
+}
+.pdfview {
+	display: block;
+	margin: auto;
+    min-width: 300px;
+	min-height: 480px;
+	border-radius: 20px;
+    
+}
+@media screen and (min-width: 600px){
+	.pdfview{
+     display: none;
+	}
+	.pdfview2{
+		display: block;
+		width: 80%;
+		height: 600px;
+		border-radius: 20px;
+		
+
+	}
+
+}
+/*Desarrollo del contenido del subareas*/
+/*Desarrollo de la maquetacion de radio*/
+.comunication-rt{
+		width: 100%;
+
+		
+		padding: 16px;
+	}
+.container-box-rt{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.container-box-rt .rt-radio{
+	width: 50%;
+  
+	height: 100%;
+	
+
+}
+.rt-radio iframe{
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	height: 100%;
+	box-shadow: 0 0 4px 0 #333;
+	transition: box-shadow .3s;
+
+
+}
+.rt-radio .iostream{
+	width: 100%;
+	
+	height: 80px;
+
+}
+.rt-radio iframe:hover{
+	box-shadow: 0 0 8px 1px #444;
+	
+}
+/*DESARROLO DEL MODULO LOGIN*/
+.login{
+	width: 100%;
+	height: 480px;
+	padding: 20px;
+	background-color: #fff;
+}
+.login .login__box{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login__box-item{
+	width: 380px;
+	height: 300px;
+	background-color: #2F7BAC;
+	border-radius: 6px;
+	box-shadow: 5px 5px 45px -9px rgb(0 0 0 / 60%);
+}
+.title-box-login{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.title-box-login span{
+	color: #fff;
+	font-family: "Roboto";
+	font-size: 1.5em;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+.formulario-login{
+	width: 100%;
+	height: 80%;
+	padding: 0 20px;
+
+}
+.boton-input{
+	display: flex;
+	border-bottom: 2px solid #D9D9D8 ;
+	border-radius: 0 ;
+	color: #0A3A5A ;
+	margin: 12px 0;
+}
+.formulario-login input:-webkit-autofill,
+.formulario-login input:-webkit-autofill:hover,
+.formulario-login input:-webkit-autofill:focus,
+.formulario-login input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+.formulario-login input{
+	width: 303px;
+	height: 38px;
+	border: 0px ;
+	background-color: #2F7BAC;
+	outline: none;
+	color: #fff;
+	font-family: "Roboto";
+
+}
+
+.icon-login{
+	width: 38px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-login .icon-login--fas{
+display: flex;
+justify-content: center;
+}
+.icon-login i{
+	font-size: 1rem;
+	font-weight: bolder;
+
+}
+::placeholder{
+	color: #ccc;
+	font-family: "Roboto";
+}
+.boton-login--ingresar{
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+ .boton-login{
+	background-color: #0A3A5A !important;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: none !important;
+
+}
+.boton-login:hover{
+	background-color: black;
+}
+
+.foot-formulario{
+  padding-top: 80px;
+	text-align: center;
+
+}
+.foot-formulario span{
+   font-family: "Helvetica Neue", Helvetica;
+   letter-spacing: 2px;
+   color:#0A3A5A  ;
+   font-weight: bolder;
+   font-size: 1.4em;
+   
+}
+.bad{
+	position: absolute;
+}
+
+/*DISEÑO PARA LA SECCION DE FUNCIONES DE CADA AREA*/
+
+.fn-funciones{
+	width: 100%;
+	height: 100%;
+	padding: 20px 30px;
+}
+.fn-funciones .fn-box{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.fn-title{
+	text-align: center;
+}
+.fn-title span{
+	 font-family: "Helvetica Neue", Helvetica;
+   letter-spacing: 3px;
+   color:#ED564B  ;
+   font-weight: bolder;
+   font-size: 1.2em;
+   text-align: center;
+}
+.fn-content-funciones{
+	text-align: justify;
+	padding: 0 20px;
+	
+}
+.fn-content-funciones li{
+	list-style: decimal;
+	padding: 6px 0;
+	font-size: 16px;
+	font-family: "Roboto";
+	font-weight: bold;
+	color: #555;
+
+}
+.modal-content{
+	margin-top: 280px;
+	
+	
+
+}
+.modal-body div{
+	display: flex;
+}
+.foto-jefe{
+	width: 220px;
+	height: 220px;
+	padding: 0 6px;
+}
+.foto-jefe img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.jefe-info li{
+	padding: 3px 0;
+}
+
+.dir-ugel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+
+}
+.dir-ugel .item-director{
+	display: flex;
+}
+.dir-ugel .item-111{
+	height: 500px;
+	width: 400px;
+	
+	
+}
+.dir-ugel img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.dir-ugel .item-222{
+	
+	height: 100%;
+	padding-left: 40px;
+	display: flex;
+	align-items: center;
+
+}
+ button{
+        border: none;
+        outline: none !important;
+        background-color: transparent;
+
+    }
+    button::hover{
+        color: #fff !important;
+        
+    }
+    .modal-title{
+        color: #0088CC !important;
+        text-align: center;
+    }
+    .item-button-jefe button{
+        width: 300px;
+        height: 60px;
+    }
+    .item-box-main button{
+        width: 143px;
+        height: 143px;
+    }
+/*Diseño para la barra de navegacion Modo Responsivo*/
+
+@media screen and (max-width: 900px){
+
+	.header-box-2{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	.nav-responsive{
+		width: 100%;
+		height: 50px;
+		background-color:#0088CC ;
+		padding: 0 10px;
+	}
+	.box-responsive{
+	
+		width: 100%;
+		height: 100%;
+		display: flex;
+	}
+	.trans{
+		display: none;
+	}
+	.header-box-item1{
+		justify-content: center;
+		padding-left: 14px;
+	}
+
+	/*Diseño responsivo del boton bars*/
+	.box-responsive-item2{
+		
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		padding: 0 12px;
+		align-items: center;
+	}
+	.item2-button-responsive{
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		text-align: center;
+		margin: auto;
+		padding: 3px;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all .3s;
+	}
+	.item2-button-responsive:hover{
+		background-color:#007AB7 ;
+	}
+	.item2-button-responsive i{
+		font-size: 20px;
+		color: #fff;
+	}
+
+	/*Diseño de los botones de redes sociales*/
+	.box-responsive-item1{
+		
+		width: 50%;
+		height: 100%;
+	}
+	.nav-redes-responsive{
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	.nav-redes-responsive ul{
+		display: flex;
+
+
+	}
+	.nav-redes-responsive li{
+		list-style: none;
+		width: 26px;
+		height: 26px;
+		align-self: center;
+		justify-self: center;
+		background-color: #fff;
+		margin: 2px 2px;
+		border-radius: 100%;
+		box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
+		transition-property: background-color;
+		transition-duration: .5s;
+
+	}
+	.nav-redes-responsive li:hover{
+		background-color: #C3191E;
+	}
+	.nav-redes-responsive a{
+		width: 26px;
+		height: 26px;
+		display: flex;
+		text-decoration: none;
+		color: #000;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-redes-responsive i{
+		display: flex;
+		font-size: 13px;
+	}
+	.nav-redes-responsive a:hover{
+		color: #fff;
+	}
+
+	/*NAV RESPONSIVO*/
+
+	/*Diseño de la primera cabecera, modificacion en altura*/
+	.header-box{
+		height: 120px;
+	}
+	/*Diseño del box  Slider, modificacion en altura*/
+	.box-slider{
+		height: 360px;
+		
+	}
+	/*Diseño del box de servicios, modificacion de altura*/
+	.box-services{
+		padding: 0 20px;
+		min-height: 100%;
+	}
+	.services .item{
+		width: 100px;
+		height: 140px;
+	}
+	.item-services .logo-services{
+		width: 100%;
+		height: 71.5%;
+	
+	
+	}
+	.item-services .logo-letter{
+		padding-top: 8px;
+	}
+	.main-box{
+		flex-direction: column;
+		height: 100%;
+	}
+	.main-comunicados, .main-noticias{
+	 width: 100%;
+
+	}
+	/*Diseño de resposivo en inst*/
+	.main-gestion-inst{
+		height: 100%;
+	}
+	/*Diseño responsivo de nosotros-main*/
+	.caja-main-box{
+		flex-wrap: wrap;
+	}
+	.buttons-box{
+		flex-grow: 1;
+		
+	
+	   
+		
+	}
+	.container-box{
+			flex-grow: 1;
+		  
+		
+	}
+	/*Diseño mas responsivo para boxing main*/
+	.caja-main-box{
+		padding: 0px;
+	}
+	.buttons-box{
+		
+		padding: 0;
+	}
+	/*Diseño resposivo para los botones de las areas*/
+	.item-boxes{
+		width: 150px;
+		height: 150px;
+	}
+	.item-boxes .item-box-main span{
+		font-size: .7em;
+	}
+	/*RADIO CONFIGURACION*/
+	.container-box-rt .rt-radio{
+		width: 100%;
+	}
+	/*DESARROLO DEL LOGIN RESPONSIVO*/
+	.login{
+		height: 830px;
+	}
+	.login__box{
+		align-items: flex-start !important;
+	}
+	.login__box-item{
+		width: 300px;
+	}
+	.dir-ugel .item-director{
+		flex-direction: column;
+	}
+   .item-director img{
+   	padding: 0 30px;
+   }
+   .item-222{
+   	padding-top: 10px;
+   }
+   
+   marquee{
+   	display: none;
+   }
+	
+
+
+
+
+	
+
+}
+@media(max-width:700px){
+   .box-slider{
+	width: 100%;
+	height: 260px;	
+	padding: 20px;
+
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+	.header-box{
+		height: 100px;
+	}
+	.box-slider{
+		height: 160px;
+	}
+	.services .item{
+		width: 120px;
+	}
+	.item-services .logo-services{
+		width: 100%;
+		height: 85.5%;
+	
+	
+	}
+
+	/*Modificacion del footer 1 los dos box*/
+	.box-info-item1, .box-info-item2{
+		width: 100%;
+
+	}
+	.flex-box-info{
+		flex-wrap: wrap;
+	}
+	.box-info-footer{
+		padding: 0 2px;
+	}
+	.box-info-item2{
+	justify-content: center;
+	padding: 6px 0;
+	}
+	/*Diseño de resposivo en inst*/
+	.main-gestion-inst{
+		height: 100%;
+	}
+	.buttons-box{
+	
+		padding: 0;
+	}
+	.menu__links{
+		top: 150px;
+		z-index: 123012;
+	}
+
+	.modal-content{
+		width: 320px !important;
+		margin-top: -1px;
+		margin-left: 18px;
+	}
+	.modal-body div{
+		margin-top: 0 !important;
+		flex-direction: column;
+	}
+	.convocatoria .table {
+   padding: 0;
+}
+.modal-dialog {
+    margin-top:100px !important;
+}
+	.login .login__box{
+	    height:400px;
+	}
+	.login{
+	    height:0;
+	}
+	.carousel-inner{
+		height: 70px !important;
+	}
+	
+	
+}
+
