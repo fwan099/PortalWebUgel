@@ -35,8 +35,8 @@ class JefeSubC{
 
 		$tablaDB = $tabla;
 		$id = $ident;
-
-		$respuesta = JefeSubM::EditarJefeSubM($tablaDB,$id);
+		if($id != ''){
+			$respuesta = JefeSubM::EditarJefeSubM($tablaDB,$id);
 		
 
 			echo '<div class="modal-body">
@@ -92,6 +92,9 @@ class JefeSubC{
 
 	            
 	          </div>';
+		}
+
+		
 		
 
 	
@@ -123,7 +126,7 @@ class JefeSubC{
 
 					$rutaImg = "Vistas/img/jefeArea/N".$nombre.".jpg";
 
-					$imagen = imagecreatefromjpeg($_FILES["fotoE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 
 					imagejpeg($imagen,$rutaImg);
@@ -134,7 +137,7 @@ class JefeSubC{
 
 					$rutaImg = "Vistas/img/jefeArea/N".$nombre.".png";
 
-					$imagen = imagecreatefrompng($_FILES["fotoE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 
 					imagepng($imagen,$rutaImg);

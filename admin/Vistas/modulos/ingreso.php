@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>UGEL YUNGUYO </title>
-  <link rel="shortcut icon" href="<?php echo urlsite ?>public/img/logo.gif" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
@@ -15,11 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Roboto+Mono:wght@100;200&family=Roboto:wght@700&display=swap" rel="stylesheet">
   
-  
 </head>
 <body style="background-color:#fff;">
-
-
   <section class="header-box">
     <div class="header-box-item1">
       <a href="../index.php"><img class="logo" src="Vistas/img/portada.jpg"></a>

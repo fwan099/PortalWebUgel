@@ -91,7 +91,7 @@ class UsuariosC{
 
 					$rutaImg = "Vistas/img/usuarios/U".$nombre.".jpg";
 
-					$foto = imagecreatefromjpeg($_FILES["fotoN"]["tmp_name"]);
+					$foto = imagecreatefromstring(file_get_contents($_FILES["fotoN"]["tmp_name"]));
 
 					imagejpeg($foto,$rutaImg);
 
@@ -105,7 +105,7 @@ class UsuariosC{
 
 					$rutaImg = "Vistas/img/usuarios/U".$nombre.".png";
 
-					$foto = imagecreatefrompng($_FILES["fotoN"]["tmp_name"]);
+					$foto = imagecreatefromstring(file_get_contents($_FILES["fotoN"]["tmp_name"]));
 
 					imagepng($foto,$rutaImg);
 
@@ -196,7 +196,7 @@ class UsuariosC{
 
 					$rutaImg = "Vistas/img/usuarios/U".$nombre."jpg";
 
-					$foto = imagecreatefromjpeg($_FILES["fotoE"]["tmp_name"]);
+					$foto = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 					imagejpeg($foto,$rutaImg);
 				}
@@ -209,7 +209,7 @@ class UsuariosC{
 
 					$rutaImg = "Vistas/img/usuarios/U".$nombre."png";
 
-					$foto = imagecreatefrompng($_FILES["fotoE"]["tmp_name"]);
+					$foto = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 					imagepng($foto,$rutaImg);
 				}
@@ -223,13 +223,23 @@ class UsuariosC{
 			$respuesta = UsuariosM::ActualizarUsuariosM($tablaDB,$datosC);
 
 			if($respuesta==true){
+				if($_GET["url"]=="perfil"){
+					echo '<script> 
 
-				echo '<script> 
+					window.location= "perfil"; 
+
+
+					</script>';
+				}else{
+					echo '<script> 
 
 					window.location= "usuarios"; 
 
 
 					</script>';
+				}
+
+				
 			}else{
 				echo 'ERROR AL EDITAR USUARIO';
 			}

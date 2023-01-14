@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="utf-8" lang="en">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Administrador | UGEL</title>
+  <title>UGEL Yunguyo</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -63,6 +63,7 @@ if(isset($_SESSION["Ingreso"]) && $_SESSION["Ingreso"]==true){
   echo '</div>';
 }else{
   include 'modulos/ingreso.php';
+  
 }
 
   
@@ -74,6 +75,7 @@ if(isset($_SESSION["Ingreso"]) && $_SESSION["Ingreso"]==true){
 
 <!-- jQuery 3 -->
 <script src="Vistas/bower_components/jquery/dist/jquery.min.js"></script>
+
 <!-- jQuery UI 1.11.4 -->
 <script src="Vistas/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

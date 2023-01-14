@@ -125,7 +125,7 @@ class DireccionC{
 
 					$rutaImg = "Vistas/img/jefeArea/N".$nombre.".jpg";
 
-					$imagen = imagecreatefromjpeg($_FILES["fotoE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 
 					imagejpeg($imagen,$rutaImg);
@@ -136,7 +136,7 @@ class DireccionC{
 
 					$rutaImg = "Vistas/img/jefeArea/N".$nombre.".png";
 
-					$imagen = imagecreatefrompng($_FILES["fotoE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["fotoE"]["tmp_name"]));
 
 
 					imagepng($imagen,$rutaImg);

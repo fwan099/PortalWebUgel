@@ -17,27 +17,30 @@ class SlideC{
 
 					$rutaImg = "Vistas/img/slide/S".$nombre.".jpg";
 
-					$imagen = imagecreatefromjpeg($_FILES["imagenN"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenN"]["tmp_name"]));
 
 
 					imagejpeg($imagen,$rutaImg);
+					
 				}
 
 				if($_FILES["imagenN"]["type"] == "image/png"){
 
+					
 					$nombre = mt_rand(10,999);
 
 					$rutaImg = "Vistas/img/slide/S".$nombre.".png";
 
-					$imagen = imagecreatefrompng($_FILES["imagenN"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenN"]["tmp_name"]));
 
 
 					imagepng($imagen,$rutaImg);
+					
 				}
 
 
 			}
-
+			
 			$tablaDB = "slide";
 
 			$datosC = array("orden"=>$_POST["ordenN"],"imagen"=>$rutaImg);
@@ -92,10 +95,11 @@ class SlideC{
 
 					$rutaImg = "Vistas/img/slide/S".$nombre.".jpg";
 
-					$imagen = imagecreatefromjpeg($_FILES["imagenE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenE"]["tmp_name"]));
 
 
 					imagejpeg($imagen,$rutaImg);
+					//move_uploaded_file($imagen,$rutaImg);
 	 			}
 
 	 			if($_FILES["imagenE"]["type"]=="image/png"){
@@ -104,7 +108,7 @@ class SlideC{
 
 					$rutaImg = "Vistas/img/slide/S".$nombre.".png";
 
-					$imagen = imagecreatefrompng($_FILES["imagenE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenE"]["tmp_name"]));
 
 
 					imagepng($imagen,$rutaImg);

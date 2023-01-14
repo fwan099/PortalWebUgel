@@ -1,3 +1,3 @@
 <?php 
- define("urlsite", "http://localhost/web-adm/");
+ define("urlsite", "http://localhost/PortalWeb/PortalWebUgel/");
  ?>

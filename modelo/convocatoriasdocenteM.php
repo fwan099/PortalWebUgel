@@ -1,13 +1,13 @@
 <?php 
 
-require_once "../../admin/modelos/ConexionBD.php";
+require_once "ConexionBD.php";
 
 
-class ConvocatoriasDocenteM extends ConexionDB{
+class ConvocatoriasDocenteM extends ConexionBD{
 
 	static public function MostrarConvocatoriasDocenteM($tablaDB){
 
-		$pdo = ConexionDB::cDB()->prepare(" SELECT * FROM $tablaDB ORDER BY id DESC");
+		$pdo = ConexionBD::cDB()->prepare(" SELECT * FROM $tablaDB ORDER BY id DESC");
 
 		$pdo->execute();
 

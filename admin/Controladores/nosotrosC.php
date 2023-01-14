@@ -105,7 +105,7 @@ class NosotrosC{
 
 					$rutaImg = "Vistas/img/nosotros/N".$nombre.".jpg";
 
-					$imagen = imagecreatefromjpeg($_FILES["imagenE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenE"]["tmp_name"]));
 
 
 					imagejpeg($imagen,$rutaImg);
@@ -116,7 +116,7 @@ class NosotrosC{
 
 					$rutaImg = "Vistas/img/nosotros/N".$nombre.".png";
 
-					$imagen = imagecreatefrompng($_FILES["imagenE"]["tmp_name"]);
+					$imagen = imagecreatefromstring(file_get_contents($_FILES["imagenE"]["tmp_name"]));
 
 
 					imagepng($imagen,$rutaImg);

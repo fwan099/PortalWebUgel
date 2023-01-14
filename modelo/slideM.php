@@ -1,12 +1,12 @@
 <?php 
 
-require_once "admin/modelos/ConexionBD.php";
+require_once "ConexionBD.php";
 
-class SlideM extends ConexionDB{
+class SlideM extends ConexionBD{
 
 	static public function MostrarSlideM($tablaDB){
 
-		$pdo = ConexionDB::cDB()->prepare("SELECT orden, imagen FROM $tablaDB ORDER BY orden ASC");
+		$pdo = ConexionBD::cDB()->prepare("SELECT orden, imagen FROM $tablaDB ORDER BY orden ASC");
 
 		$pdo->execute();
 

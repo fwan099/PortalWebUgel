@@ -23,7 +23,6 @@ class JefeSubM extends ConexionDB{
 
             $pdo = ConexionDB::cDB()->prepare(" SELECT * FROM $tablaDB ORDER BY id ASC");
 
-            $pdo ->bindParam(":".$item, $valor,PDO::PARAM_STR);
 
             $pdo->execute();
 

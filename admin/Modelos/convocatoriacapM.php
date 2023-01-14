@@ -53,7 +53,7 @@
 
             $pdo = ConexionDB::cDB()->prepare(" SELECT * FROM $tablaDB ORDER BY id DESC");
 
-            $pdo ->bindParam(":".$item, $valor,PDO::PARAM_STR);
+           // $pdo ->bindParam(":".$item, $valor,PDO::PARAM_STR);
 
             $pdo->execute();
 

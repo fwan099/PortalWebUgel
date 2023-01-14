@@ -7,6 +7,7 @@
 
  	static public function CrearSlideM($tablaDB,$datosC){
 
+
  		$pdo = ConexionDB::cDB()->prepare("INSERT INTO $tablaDB (orden, imagen) VALUES (:orden, :imagen)");
 
  		$pdo->bindParam(":orden",$datosC["orden"],PDO::PARAM_STR);
@@ -30,7 +31,7 @@
 
         if($item != null){
 
-            $pdo = ConexionDB::cDB()->prepare(" SELECT * FROM $tablaDB WHERE $item=:$item");
+            $pdo = ConexionDB::cDB()->prepare(" SELECT id, orden,imagen FROM $tablaDB WHERE $item=:$item");
 
             $pdo ->bindParam(":".$item, $valor,PDO::PARAM_STR);
 
@@ -42,9 +43,8 @@
 
         }else{
 
-            $pdo = ConexionDB::cDB()->prepare(" SELECT * FROM $tablaDB ORDER BY orden ASC");
+            $pdo = ConexionDB::cDB()->prepare(" SELECT id,orden,imagen FROM $tablaDB ORDER BY orden ASC");
 
-            $pdo ->bindParam(":".$item, $valor,PDO::PARAM_STR);
 
             $pdo->execute();
 
